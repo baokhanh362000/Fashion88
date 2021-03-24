@@ -1,0 +1,207 @@
+@font-face{
+    src: url(../Font/gothamhtf-bold-webfont.ttf);
+    font-family: myfont1;
+}
+@font-face{
+    src: url(../Font/gothamhtf-book-webfont.ttf);
+    font-family: myfont2;
+}
+.container{
+    width: 100%;
+    min-width: 980px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    .header{
+        position: absolute;
+        top: 174px;
+        left: 54px;
+        z-index: 100;
+        .nav-header{
+            li{
+                margin-top: 31px;
+                &:nth-child(1){
+                    margin-top: 0;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-family: myfont2;
+                    font-weight: 600;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+    }
+    .main{
+        width: 100%;
+        .big-pic{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            .title-big-pic{
+                font-family: myfont1;
+                position: absolute;
+            }
+        }
+        #pic1{
+            p{
+                padding: 0 0 53.5px 10px;
+                font-size: 74px;
+                font-weight: 700;
+                letter-spacing: 7px;
+            }
+        }
+        #pic2-pic3{
+            display: flex;
+            #pic2{
+                flex-grow: 1;
+                .title-big-pic{
+                    font-size: 31.5px;
+                    font-weight: 700;
+                    color: white;
+                    padding: 5px 0 0 28px ;
+                    p{
+                        &:nth-child(1){
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            letter-spacing: 1px;
+                            font-size: 64px;
+                            line-height: 63.5px;
+                        }
+                        &:nth-child(2){
+                            line-height: 29px;
+                        }
+                        
+                    }
+                }
+            }
+            #pic3{
+                flex-grow: 1;
+                .title-big-pic{
+                    font-size: 54px;
+                    font-weight: 700;
+                    letter-spacing: -1px;
+                    color: white;
+                    padding: 5px 45px 0 0 ;
+                }
+            }
+        }
+        .main-tag{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: myfont2;
+            font-weight: 600;
+        }
+        .list-pic{
+            display: flex;
+            img{
+                flex-grow: 1;
+            }
+        }
+    }
+    .footer{
+        width: auto;
+        margin: 40px 130px 50px 130px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        height: 200px;
+        .search-connect{
+            label{
+                font-family:myfont1 ;
+                font-size: 18px;
+            }
+            .search{
+                display: flex;
+                margin-top: 5px;
+                input{
+                    height: 50px;
+                    width: 640px;
+                    border: 2px solid black;
+                    margin: 0;
+                    padding: 0;
+                }
+                button{
+                    height: 50px;
+                    width: 50px;
+                    background-color: black;
+                    color: white;
+                    border: none;
+                    font-family:myfont1;
+                    font-size: 17px;
+                    margin-left: 4px;
+                }
+            }
+            .connect{
+                ul{
+                    margin-top: 15px;
+                    display: flex;
+                    li{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin:0 15px 0 15px;
+                        a{
+                            img{
+                                height: 45px;
+                            }
+                        }
+                        &:nth-child(4){
+                            img{
+                                height: 30px;
+                            }
+                        }
+                        &:nth-child(5){
+                            img{
+                                height: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .customer-care{
+            ul{
+                p{
+                    font-family: myfont1;
+                    font-size: 20px;
+                }
+                li{
+                    margin: 3px 0 3px 0;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-family: myfont2;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .nav{
+            position: absolute;
+            bottom: 0;
+            margin: 0 200px;
+            ul{
+                display: flex;
+                li{
+                    font-family: myfont2;
+                    margin: 0 7px 0  7px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
